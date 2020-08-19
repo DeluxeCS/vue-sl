@@ -11,17 +11,18 @@
       const app = new CVue({
         data: {
           test: "new test1",
-          foo: {
-            batch: {
-              tt1: "----",
-            },
-            batchch: "++++",
-          },
+          // foo: {
+          //   batch: {
+          //     tt1: "----",
+          //   },
+          //   batchch: "++++",
+          // },
         },
       });
-    //   app.$data.foo.batch.tt1 = "1111";
-      app.$data.foo.batchch = "2222";
+      // app.$data.foo.batch.tt1 = "1111";
+      // app.$data.foo.batchch = "2222";
       app.$data.test = "更新后的值";
+      app.$data.test = "更新后的值2";
     </script>
   </body>
 </html>

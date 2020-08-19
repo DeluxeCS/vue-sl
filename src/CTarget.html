@@ -7,22 +7,27 @@
   </head>
   <body>
     <div id="app">
+      <!-- 插值绑定 -->
       <p>{{name}}</p>
+      <!-- 指令绑定 -->
       <p c-text="name"></p>
+      <!-- 插值绑定 -->
       <p>{{age}}</p>
       <p>
         {{doubleAge}}
       </p>
       <!--数据双向绑定-->
       <input type="text" c-model="name" />
+      <!-- 事件处理 -->
       <button @click="changeName">呵呵</button>
       compile.js
+      <!-- html解析 -->
       <div c-html="html"></div>
     </div>
     <script src="./js/compile.js"></script>
     <script src="./js/CVue.js"></script>
     <script>
-      let kaikeba = new KVue({
+      let cvue = new CVue({
         el: "#app",
         data: {
           name: "I am test.",
